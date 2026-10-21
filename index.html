@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cahyaning Wulan</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- ======== PAGE 1 : LANDING ======== -->
+<div id="pg1" class="pg1">
+  <div class="blobs">
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <div class="blob b3"></div><div class="blob b4"></div>
+  </div>
+  <header class="hd">
+    <span class="hd-logo">cahya<em>.</em></span>
+    <span class="hd-tag">SMK Negeri 7 Semarang</span>
+  </header>
+  <div class="hero">
+    <div class="hero-bg-text">CAHYA</div>
+    <div class="hero-card">
+      <div class="hcard-inner">
+        <img src="foto/profil.jpeg" alt="Cahya" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+        <div class="hcard-fallback"><i class="fas fa-user"></i></div>
+      </div>
+      <div class="sticker s1">hi!</div>
+      <div class="sticker s2">2026</div>
+      <div class="sticker s3">English</div>
+    </div>
+    <div class="hero-txt">
+      <p class="hero-sub">&mdash; Portfolio</p>
+      <h1 class="hero-name">Cahyaning<br><em>Wulan</em></h1>
+      <p class="hero-full">Shafarahma Putri</p>
+      <div class="hero-type-row">
+        <span class="dot-pulse"></span>
+        <span id="tw"></span>
+      </div>
+      <button class="hero-cta" onclick="showP2()">
+        <span>View Portfolio</span>
+        <span class="cta-circle"><i class="fas fa-arrow-right"></i></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat-item">
+      <span class="stat-num">3+</span>
+      <span class="stat-label">Years of Learning</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">10+</span>
+      <span class="stat-label">Projects Done</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">4+</span>
+      <span class="stat-label">Certificates</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- ======== PAGE 2 : PORTFOLIO ======== -->
+<div id="pg2" class="pg2 hidden">
+
+  <nav class="nav2">
+    <button class="nav2-back" onclick="showP1()"><i class="fas fa-arrow-left"></i></button>
+    <span class="nav2-logo">cahya<em>.</em></span>
+    <div class="nav2-links">
+      <a href="#" onclick="scrollTo2('sec-about')">About</a>
+      <a href="#" onclick="scrollTo2('sec-work')">Portfolio</a>
+    </div>
+    <button class="nav2-ham" id="ham2" onclick="toggleMob()"><i class="fas fa-bars"></i></button>
+  </nav>
+  <div class="mob2" id="mob2">
+    <a href="#" onclick="scrollTo2('sec-about');toggleMob()">About</a>
+    <a href="#" onclick="scrollTo2('sec-work');toggleMob()">Portfolio</a>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="sec-about" class="sec-about">
+    <div class="sec-bg-word">ABOUT</div>
+    <div class="about-grid">
+      <div class="ab-photo">
+        <div class="ab-photo-frame">
+          <img src="foto/profil.jpeg" alt="Cahya" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+          <div class="ab-fallback"><i class="fas fa-user"></i></div>
+        </div>
+        <div class="ab-chip"><i class="fas fa-school"></i> SMK Negeri 7 Semarang</div>
+      </div>
+      <div class="ab-text">
+        <p class="sec-eyebrow">01 / About</p>
+        <h2 class="ab-title">Hi there,<br>I'm <em>Cahya!</em></h2>
+        <p class="ab-desc">I am a passionate student who loves exploring new knowledge and creating meaningful work. I enjoy challenges that push me to grow and think creatively.</p>
+        <p class="ab-desc">With dedication and a strong will to keep learning, I always strive to do my best in everything I pursue.</p>
+        <div class="ab-tags">
+          <span class="ab-tag">📍 Semarang, Indonesia</span>
+          <span class="ab-tag">🎓 Vocational Student</span>
+          <span class="ab-tag">💻 Tech & Design</span>
+          <span class="ab-tag">✨ Class of 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="sec-work" class="sec-work">
+    <div class="sec-bg-word">WORK</div>
+    <div class="work-inner">
+
+      <!-- SKILLS -->
+      <div class="skills-mini">
+        <p class="sec-eyebrow">&mdash; Hard Skills</p>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-top"><span>Web HTML</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:75%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>Networking</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>Canva Design</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>UI/UX Design</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%;"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SOFT SKILLS -->
+      <div class="skills-mini">
+        <p class="sec-eyebrow">&mdash; Soft Skills</p>
+        <div class="softskill-tags">
+          <span class="ss-tag">Communication</span>
+          <span class="ss-tag">Teamwork</span>
+          <span class="ss-tag">Responsibility</span>
+          <span class="ss-tag">Creativity</span>
+          <span class="ss-tag">Time Management</span>
+        </div>
+      </div>
+
+      <div class="work-head">
+        <p class="sec-eyebrow">&mdash; My Portfolio</p>
+        <h2 class="work-title">My <em>Portfolio.</em></h2>
+      </div>
+
+      <!-- TAB BUTTONS -->
+      <div class="tab-btns">
+        <button class="tab-btn active" onclick="switchTab('web', this)">Website</button>
+        <button class="tab-btn" onclick="switchTab('cert', this)">Certificates</button>
+        <button class="tab-btn" onclick="switchTab('store', this)">Online Store</button>
+        <button class="tab-btn" onclick="switchTab('design', this)">Design</button>
+      </div>
+
+      <!-- TAB: WEBSITE -->
+      <div class="tab-panel" id="tab-web">
+        <div class="work-row">
+          <a href="https://pixel-vanguard-eosin.vercel.app/" target="_blank" class="ws-card" style="--c1:#ffe7ff;--c2:#f4adcf;">
+            <div class="wsc-top" style="padding:0;overflow:hidden;background:#fff;"><img src="foto/steam.png" style="width:100%;height:100%;object-fit:contain;padding:10px;"/></div>
+            <div class="wsc-bot"><span class="ws-num">01</span><h4>Pixel Vanguard</h4><p>Web</p><div class="ws-open">Open <i class="fas fa-arrow-up-right"></i></div></div>
+          </a>
+          <a href="https://personal-branding-cahya.vercel.app/" target="_blank" class="ws-card" style="--c1:#f4adcf;--c2:#fffabf;">
+            <div class="wsc-top" style="padding:0;overflow:hidden;background:#fff;"><img src="foto/personal-branding.jpeg" style="width:100%;height:100%;object-fit:contain;padding:8px;"/></div>
+            <div class="wsc-bot"><span class="ws-num">02</span><h4>Personal Branding</h4><p>Web &middot; Branding</p><div class="ws-open">Open <i class="fas fa-arrow-up-right"></i></div></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- TAB: CERTIFICATES -->
+      <div class="tab-panel hidden" id="tab-cert">
+        <div class="work-row">
+          <a href="foto/program-ai.jpeg" target="_blank" class="ws-card" style="--c1:#ffe7ff;--c2:#f4adcf;">
+            <div class="wsc-top" style="padding:0;overflow:hidden;"><img src="foto/program-ai.jpeg" style="width:100%;height:100%;object-fit:cover;"/></div>
+            <div class="wsc-bot"><span class="ws-num">01</span><h4>AI Program Certificate</h4><p>Certificate</p><div class="ws-open">Open <i class="fas fa-arrow-up-right"></i></div></div>
+          </a>
+          <a href="foto/oracle.jpeg" target="_blank" class="ws-card" style="--c1:#fffabf;--c2:#b2f9e7;">
+            <div class="wsc-top" style="padding:0;overflow:hidden;"><img src="foto/oracle.jpeg" style="width:100%;height:100%;object-fit:cover;"/></div>
+            <div class="wsc-bot"><span class="ws-num">02</span><h4>Oracle Certificate</h4><p>Certificate</p><div class="ws-open">Open <i class="fas fa-arrow-up-right"></i></div></div>
+          </a>
+          <a href="foto/hours-of-code.jpg" target="_blank" class="ws-card" style="--c1:#b2f9e7;--c2:#bfc4ff;">
+            <div class="wsc-top" style="padding:0;overflow:hidden;"><img src="foto/hours-of-code.jpg" style="width:100%;height:100%;object-fit:cover;"/></div>
+            <div class="wsc-bot"><span class="ws-num">03</span><h4>Hours of Code</h4><p>Certificate</p><div class="ws-open">Open <i class="fas fa-arrow-up-right"></i></div></div>
+          </a>
+          <a href="foto/save-the-children.jpg" target="_blank" class="ws-card" style="--c1:#fffabf;--c2:#b2f9e7;">
+            <div class="wsc-top" style="padding:0;overflow:hidden;"><img src="foto/save-the-children.jpg" style="width:100%;height:100%;object-fit:cover;"/></div>
+            <div class="wsc-bot"><span class="ws-num">04</span><h4>Save The Children</h4><p>Certificate</p><div class="ws-open">Open <i class="fas fa-arrow-up-right"></i></div></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- TAB: ONLINE STORE -->
+      <div class="tab-panel hidden" id="tab-store">
+        <div class="work-row">
+          <a href="https://s.id/cayya" target="_blank" class="ws-card" style="--c1:#bfc4ff;--c2:#ffe7ff;">
+            <div class="wsc-top" style="padding:0;overflow:hidden;"><img src="foto/online-store.jpeg" style="width:100%;height:100%;object-fit:cover;"/></div>
+            <div class="wsc-bot"><span class="ws-num">01</span><h4>Cayya Online Shop</h4><p>Online Store</p><div class="ws-open">Open <i class="fas fa-arrow-up-right"></i></div></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- TAB: DESIGN -->
+      <div class="tab-panel hidden" id="tab-design">
+        <div class="work-row">
+          <a href="foto/desain-logo.png" target="_blank" class="ws-card" style="--c1:#fffabf;--c2:#f4adcf;">
+            <div class="wsc-top" style="padding:0;overflow:hidden;"><img src="foto/desain-logo.png" style="width:100%;height:100%;object-fit:cover;"/></div>
+            <div class="wsc-bot"><span class="ws-num">01</span><h4>Logo Design</h4><p>Design</p><div class="ws-open">Open <i class="fas fa-arrow-up-right"></i></div></div>
+          </a>
+          <a href="foto/desain-personal-branding.png" target="_blank" class="ws-card" style="--c1:#b2f9e7;--c2:#bfc4ff;">
+            <div class="wsc-top" style="padding:0;overflow:hidden;"><img src="foto/desain-personal-branding.png" style="width:100%;height:100%;object-fit:cover;"/></div>
+            <div class="wsc-bot"><span class="ws-num">02</span><h4>Personal Branding Design</h4><p>Design</p><div class="ws-open">Open <i class="fas fa-arrow-up-right"></i></div></div>
+          </a>
+          <a href="foto/desain-poster-jepang.png" target="_blank" class="ws-card" style="--c1:#ffe7ff;--c2:#bfc4ff;">
+            <div class="wsc-top" style="padding:0;overflow:hidden;"><img src="foto/desain-poster-jepang.png" style="width:100%;height:100%;object-fit:cover;"/></div>
+            <div class="wsc-bot"><span class="ws-num">03</span><h4>Japanese Poster Design</h4><p>Design</p><div class="ws-open">Open <i class="fas fa-arrow-up-right"></i></div></div>
+          </a>
+          <a href="foto/desain-promosi-sekolah.png" target="_blank" class="ws-card" style="--c1:#f4adcf;--c2:#fffabf;">
+            <div class="wsc-top" style="padding:0;overflow:hidden;"><img src="foto/desain-promosi-sekolah.png" style="width:100%;height:100%;object-fit:cover;"/></div>
+            <div class="wsc-bot"><span class="ws-num">04</span><h4>School Promotion Design</h4><p>Design</p><div class="ws-open">Open <i class="fas fa-arrow-up-right"></i></div></div>
+          </a>
+          <a href="foto/desain-promosi.png" target="_blank" class="ws-card" style="--c1:#bfc4ff;--c2:#b2f9e7;">
+            <div class="wsc-top" style="padding:0;overflow:hidden;"><img src="foto/desain-promosi.png" style="width:100%;height:100%;object-fit:cover;"/></div>
+            <div class="wsc-bot"><span class="ws-num">05</span><h4>Promotion Design</h4><p>Design</p><div class="ws-open">Open <i class="fas fa-arrow-up-right"></i></div></div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EMAIL -->
+  <section class="sec-email">
+    <span class="em-eyebrow">Let's Connect</span>
+    <a href="mailto:shafarahmaputri.06@gmail.com" class="em-btn">
+      <i class="fas fa-envelope"></i>
+      <span>shafarahmaputri.06@gmail.com</span>
+      <i class="fas fa-arrow-up-right em-btn-arrow"></i>
+    </a>
+  </section>
+
+  <footer class="foot2">
+    <span>&copy; 2026 Cahyaning Wulan Shafarahma Putri</span>
+    <span>English Portfolio</span>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
